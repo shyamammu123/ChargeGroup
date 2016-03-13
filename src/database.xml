@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?><variables>
+	<!--Data Type: Output: Input-->
+	<temperature> <!--Float Array-->
+		<tcell>-5</tcell>
+		<tcell>17</tcell>
+		<tcell>25</tcell>
+		<tcell>10</tcell>
+		<tcell>4</tcell>
+		<tcell>7</tcell>
+		<tcell>16</tcell>
+		<tcell>20</tcell>
+	</temperature>
+	<voltage> <!--Float Array-->
+		<vcell>2.6</vcell>
+		<vcell>3.5</vcell>
+		<vcell>4.0</vcell>
+		<vcell>3.7</vcell>
+		<vcell>3.0</vcell>
+		<vcell>2.9</vcell>
+		<vcell>3.1</vcell>
+		<vcell>4.1</vcell>
+	</voltage>
+	<current> <!--Float Array-->
+		<ccell>0</ccell>
+		<ccell>10</ccell>
+		<ccell>35</ccell>
+		<ccell>87</ccell>
+		<ccell>56</ccell>
+		<ccell>100</ccell>
+		<ccell>19</ccell>
+		<ccell>65</ccell>
+	  </current>
+	<cellLoad> <!--Float Array: Input: Control-->
+		<cLoadCell>15</cLoadCell>
+		<cLoadCell>20</cLoadCell>
+		<cLoadCell>25</cLoadCell>
+		<cLoadCell>30</cLoadCell>
+		<cLoadCell>35</cLoadCell>
+		<cLoadCell>40</cLoadCell>
+		<cLoadCell>45</cLoadCell>
+		<cLoadCell>50</cLoadCell>
+	</cellLoad>
+	<!--Outputs: SOC-->
+	<chargeAmount>
+		<batteryCharge>50.0</batteryCharge>
+	</chargeAmount>
+	<batteryLevel>
+		<bCharge>10</bCharge> <!--Int: Output: SOC-->
+	</batteryLevel>
+	<cellSOCInput><!--Float: Input: SOC,Control-->
+		<chargeCell>10</chargeCell>
+		<chargeCell>10</chargeCell>
+		<chargeCell>5</chargeCell>
+		<chargeCell>10</chargeCell>
+		<chargeCell>15</chargeCell>
+	</cellSOCInput>
+	<cellCapacity><!--Float: Input: SOC-->
+		<totalCapacityEachCell>100</totalCapacityEachCell>
+	</cellCapacity>
+	<batteryCapacity><!--Float: Input: SOC-->
+		<totalBatteryCapacity>500</totalBatteryCapacity>
+	</batteryCapacity>
+	<carStatus>
+		<status>driving</status>
+	</carStatus>
+		<!--Outputs: SOH-->
+	<SOH_Value> <!--Int Array: Output: SOH-->
+		<SOH_Val>50</SOH_Val>
+		<SOH_Val>55</SOH_Val>
+		<SOH_Val>65</SOH_Val>
+		<SOH_Val>75</SOH_Val>
+		<SOH_Val>80</SOH_Val>
+		<SOH_Val>85</SOH_Val>
+		<SOH_Val>90</SOH_Val>
+		<SOH_Val>95</SOH_Val>
+	</SOH_Value>
+	<RULChangeBattery> <!--Bool: Output: SOH -->
+		<changeBattery>false</changeBattery>
+	</RULChangeBattery>
+	<!--Outputs: Control-->
+	<isolate><!--Bool: Output: Control-->
+		<isolateBattery>false</isolateBattery>
+	</isolate>
+	<LowSOC><!--Bool: Output: Control-->
+		<LowSOC1/>
+	</LowSOC>
+	<supplyPower><!--Bool Array: Output: Control-->
+		<SPCell/>
+		<SPCell/>
+		<SPCell/>
+		<SPCell/>
+		<SPCell/>
+		<SPCell/>
+		<SPCell/>
+		<SPCell/>
+	  </supplyPower>
+	<cellCharging><!--Bool Array: Output: Control -->
+		<cChCell/>
+		<cChCell/>
+		<cChCell/>
+		<cChCell/>
+		<cChCell/>
+		<cChCell/>
+		<cChCell/>
+		<cChCell/>
+	</cellCharging>
+</variables>
